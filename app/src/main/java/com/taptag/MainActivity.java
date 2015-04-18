@@ -1,7 +1,5 @@
 package com.taptag;
 
-import java.util.ArrayList;
-
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -18,12 +16,15 @@ import android.widget.ListView;
 
 import com.taptag.custom.CustomActivity;
 import com.taptag.model.Data;
+import com.taptag.ui.CameraClass;
 import com.taptag.ui.Categories;
 import com.taptag.ui.LeftNavAdapter;
 import com.taptag.ui.Profile;
 import com.taptag.ui.Search;
 import com.taptag.ui.Showcase;
 import com.taptag.ui.Store;
+
+import java.util.ArrayList;
 
 /**
  * The Class MainActivity is the base activity class of the application. This
@@ -123,6 +124,7 @@ public class MainActivity extends CustomActivity
 		al.add(new Data("Store", null, R.drawable.ic_nav3));
 		al.add(new Data("Profile", null, R.drawable.ic_nav4));
 		al.add(new Data("Search", null, R.drawable.ic_nav5));
+        al.add(new Data("Take picture", null, R.drawable.ic_nav6));
 		return al;
 	}
 
@@ -162,6 +164,10 @@ public class MainActivity extends CustomActivity
 			title = "Search";
 			f = new Search();
 		}
+        else if (pos == 5) {
+            title = "New picture";
+            f = new CameraClass();
+        }
 
 		if (f != null)
 		{
