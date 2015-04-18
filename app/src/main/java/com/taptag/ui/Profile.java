@@ -56,14 +56,13 @@ public class Profile extends CustomFragment
 	 */
 	private class GridAdapter extends BaseAdapter
 	{
-
 		/* (non-Javadoc)
 		 * @see android.widget.Adapter#getCount()
 		 */
 		@Override
 		public int getCount()
 		{
-			return 20;
+			return 30;
 		}
 
 		/* (non-Javadoc)

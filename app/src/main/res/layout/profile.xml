@@ -130,7 +130,7 @@
         android:padding="10dp"
         android:textColor="@color/main_color_cyan_dark"
         android:textSize="16sp"
-        android:text="20 Photos" />
+        android:text="30 Photos" />
 
      <GridView
             android:id="@+id/grid"
