@@ -1,5 +1,6 @@
 package com.taptag.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,6 +21,13 @@ public class CameraClass extends CustomFragment {
         View v = inflater.inflate(R.layout.camera, null);
 
         Button camera = (Button) v.findViewById(R.id.camera_button);
+        camera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), CameraActivity.class);
+                startActivity(intent);
+            }
+        });
         Button fb = (Button) v.findViewById(R.id.fb_button);
         fb.setOnClickListener(new View.OnClickListener() {
             @Override
