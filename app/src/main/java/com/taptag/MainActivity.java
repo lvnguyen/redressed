@@ -16,7 +16,6 @@ import android.widget.ListView;
 
 import com.parse.Parse;
 import com.parse.ParseObject;
-import com.parse.ui.ParseLoginBuilder;
 import com.taptag.custom.CustomActivity;
 import com.taptag.model.Data;
 import com.taptag.ui.Categories;
@@ -62,9 +61,8 @@ public class MainActivity extends CustomActivity
         Parse.initialize(this, "qEXwo0QIlOa4BnuCpGjRplb0lT880Qs4tovMAYTN", "d8Kl4XkpSjdn4y2Pdu7z9VxVfSdsPHXiQrLC9mie");
 
         // Trigger Parse login
-        ParseLoginBuilder builder = new ParseLoginBuilder(MainActivity.this);
-        startActivityForResult(builder.build(), 0);
-
+        // ParseLoginBuilder builder = new ParseLoginBuilder(MainActivity.this);
+        // startActivityForResult(builder.build(), 0);
         setupDrawer();
         setupContainer();
     }

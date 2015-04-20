@@ -1,17 +1,29 @@
 package com.taptag.ui;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.parse.FindCallback;
+import com.parse.GetDataCallback;
+import com.parse.ParseException;
+import com.parse.ParseFile;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.taptag.R;
 import com.taptag.custom.CustomFragment;
+
+import java.util.ArrayList;
+import java.util.List;
 
 // TODO: Auto-generated Javadoc
 /**
@@ -20,6 +32,7 @@ import com.taptag.custom.CustomFragment;
  */
 public class Profile extends CustomFragment
 {
+    private List<ParseObject> allItems;
 
 	/* (non-Javadoc)
 	 * @see android.support.v4.app.Fragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)
@@ -49,10 +62,35 @@ public class Profile extends CustomFragment
 
 		setTouchNClick(v.findViewById(R.id.p1));
 		setTouchNClick(v.findViewById(R.id.p2));
-		setTouchNClick(v.findViewById(R.id.p3));
+		// setTouchNClick(v.findViewById(R.id.p3));
 
-		GridView grid = (GridView) v.findViewById(R.id.grid);
-		grid.setAdapter(new GridAdapter());
+        allItems = new ArrayList<ParseObject>();
+        final GridAdapter gridAdapter = new GridAdapter(allItems);
+
+        GridView grid = (GridView) v.findViewById(R.id.grid);
+        grid.setAdapter(gridAdapter);
+
+        /**
+         * asynchronous
+         */
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("Clothes");
+        query.whereEqualTo("username", ParseUser.getCurrentUser());
+
+        query.findInBackground(new FindCallback<ParseObject>() {
+            @Override
+            public void done(List<ParseObject> parseObjects, ParseException e) {
+                if (e == null) {
+                    for (ParseObject object : parseObjects) {
+                        allItems.add(object);
+                    }
+                    gridAdapter.notifyDataSetChanged();
+                }
+                else {
+                    // Log error here
+                }
+            }
+        });
+
 		return v;
 	}
 
@@ -76,13 +114,19 @@ public class Profile extends CustomFragment
 	 */
 	private class GridAdapter extends BaseAdapter
 	{
+        private List<ParseObject> allItems;
+
+        public GridAdapter(List<ParseObject> allItems) {
+            this.allItems = allItems;
+        }
+
 		/* (non-Javadoc)
 		 * @see android.widget.Adapter#getCount()
 		 */
 		@Override
 		public int getCount()
 		{
-			return 5;
+			return allItems.size();
 		}
 
 		/* (non-Javadoc)
@@ -98,22 +142,35 @@ public class Profile extends CustomFragment
 		 * @see android.widget.Adapter#getItemId(int)
 		 */
 		@Override
-		public long getItemId(int arg0)
+		public long getItemId(int pos)
 		{
-			return arg0;
+			return pos;
 		}
 
 		/* (non-Javadoc)
 		 * @see android.widget.Adapter#getView(int, android.view.View, android.view.ViewGroup)
 		 */
 		@Override
-		public View getView(int arg0, View v, ViewGroup arg2)
+		public View getView(int pos, View v, ViewGroup arg2)
 		{
 			if (v == null)
 				v = LayoutInflater.from(getActivity()).inflate(
 						R.layout.profile_item, null);
 
-			return v;
+            final ImageView img = (ImageView) v.findViewById(R.id.img);
+            ParseObject imgObject = allItems.get(pos);
+            ParseFile remoteFile = (ParseFile) imgObject.get("photo");
+            remoteFile.getDataInBackground(new GetDataCallback() {
+                @Override
+                public void done(byte[] bytes, ParseException e) {
+                    if (e == null) {
+                        Bitmap bm = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+                        img.setImageBitmap(bm);
+                    }
+                }
+            });
+
+            return v;
 		}
 
 	}
