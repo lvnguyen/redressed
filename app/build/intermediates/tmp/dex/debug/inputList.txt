@@ -1,0 +1,9 @@
+/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/classes/debug
+/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-ba977b40d03379491d23cfe59da094f74f1aaf3e.jar
+/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/ParseFacebookUtilsV4-1.9.1-30da20fe5a0b9ebec8aff8b49370b90a6222d44a.jar
+/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/classes-ad799d161f28b665155ad00fe07eb845f4d158fa.jar
+/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/bolts-android-1.2.0-d54be43b90252d96b3fe936408317e1849f1684a.jar
+/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-c95cc78f8f0facf52f99504937c5f531318d94ba.jar
+/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/classes-813c7b3d7db966185d83d9aa24a97d497bb61c44.jar
+/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/Parse-1.9.1-453eed47d61c00843858748fbac3f98f33e87571.jar
+/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/classes-f1a85dbf62064ce806600307972f9df2939ea9c8.jar

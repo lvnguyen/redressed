@@ -2,11 +2,25 @@
 <items version="2" >
 
     <item
-        jar="/Users/linhnguyen/android-sdks/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jar="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/exploded-aar/redressed/ParseLoginUI/unspecified/libs/ParseFacebookUtilsV4-1.9.1.jar"
         jumboMode="false"
         revision="22.0.0"
-        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
-        <dex dex="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-da2966722264db9fc3677d25bbf81a193a85589a.jar" />
+        sha1="f78e5603a5ecac14eaa34a763c9165444a681193">
+        <dex dex="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/ParseFacebookUtilsV4-1.9.1-30da20fe5a0b9ebec8aff8b49370b90a6222d44a.jar" />
+    </item>
+    <item
+        jar="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-c95cc78f8f0facf52f99504937c5f531318d94ba.jar" />
+    </item>
+    <item
+        jar="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/classes-f1a85dbf62064ce806600307972f9df2939ea9c8.jar" />
     </item>
     <item
         jar="/Users/linhnguyen/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
@@ -14,6 +28,34 @@
         revision="22.0.0"
         sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
         <dex dex="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/bolts-android-1.2.0-d54be43b90252d96b3fe936408317e1849f1684a.jar" />
+    </item>
+    <item
+        jar="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.1/classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="f7188fc9a524a8f965b5aeab74879036f0431080">
+        <dex dex="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/classes-813c7b3d7db966185d83d9aa24a97d497bb61c44.jar" />
+    </item>
+    <item
+        jar="/Users/linhnguyen/android-sdks/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-ba977b40d03379491d23cfe59da094f74f1aaf3e.jar" />
+    </item>
+    <item
+        jar="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/exploded-aar/redressed/ParseLoginUI/unspecified/libs/Parse-1.9.1.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="1b065010f3c9d441ede9078aca8eabcd1c81e647">
+        <dex dex="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/Parse-1.9.1-453eed47d61c00843858748fbac3f98f33e87571.jar" />
+    </item>
+    <item
+        jar="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/exploded-aar/redressed/ParseLoginUI/unspecified/classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="7e76528457ac508bd108fed02c1d8df951818f21">
+        <dex dex="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/classes-ad799d161f28b665155ad00fe07eb845f4d158fa.jar" />
     </item>
     <item
         jar="/Users/linhnguyen/Desktop/open_sources/redressed/libs/Parse-1.9.1/Parse-1.9.1.jar"

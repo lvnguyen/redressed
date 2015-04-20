@@ -6,7 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
+import android.widget.TextView;
 
+import com.parse.ParseUser;
 import com.taptag.R;
 import com.taptag.custom.CustomFragment;
 
@@ -26,6 +28,14 @@ public class Profile extends CustomFragment
 			Bundle savedInstanceState)
 	{
 		View v = inflater.inflate(R.layout.profile, null);
+        ParseUser myUser = ParseUser.getCurrentUser();
+        String myUsername = (String) myUser.get("name");
+        TextView userNameText = (TextView) v.findViewById(R.id.user_name);
+        userNameText.setText(myUsername);
+
+        String myEmailAddress = myUser.getEmail();
+        TextView emailText = (TextView) v.findViewById(R.id.email_addr);
+        emailText.setText(myEmailAddress);
 
 		setTouchNClick(v.findViewById(R.id.p1));
 		setTouchNClick(v.findViewById(R.id.p2));

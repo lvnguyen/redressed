@@ -4,7 +4,7 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager.OnBackStackChangedListener;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.view.KeyEvent;
@@ -15,7 +15,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 import com.parse.Parse;
-import com.parse.ParseObject;
+import com.parse.ui.ParseLoginBuilder;
 import com.taptag.custom.CustomActivity;
 import com.taptag.model.Data;
 import com.taptag.ui.CameraClass;
@@ -56,16 +56,15 @@ public class MainActivity extends CustomActivity
 
         // Enable Local Datastore.
         Parse.enableLocalDatastore(this);
-
         Parse.initialize(this, "qEXwo0QIlOa4BnuCpGjRplb0lT880Qs4tovMAYTN", "d8Kl4XkpSjdn4y2Pdu7z9VxVfSdsPHXiQrLC9mie");
 
-        ParseObject testObject = new ParseObject("TestObject");
-        testObject.put("foo", "bar");
-        testObject.saveInBackground();
+        // Trigger Parse login
+        ParseLoginBuilder builder = new ParseLoginBuilder(MainActivity.this);
+        startActivityForResult(builder.build(), 0);
 
         setupDrawer();
-		setupContainer();
-	}
+        setupContainer();
+    }
 
 	/**
 	 * Setup the drawer layout. This method also includes the method calls for
@@ -200,6 +199,13 @@ public class MainActivity extends CustomActivity
 	 */
 	private void setupContainer()
 	{
+        getSupportFragmentManager().addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
+            @Override
+            public void onBackStackChanged() {
+                setActionBarTitle();
+            }
+        });
+        /*
 		getSupportFragmentManager().addOnBackStackChangedListener(
 				new OnBackStackChangedListener() {
 
@@ -209,6 +215,7 @@ public class MainActivity extends CustomActivity
 						setActionBarTitle();
 					}
 				});
+		*/
 		launchFragment(0);
 	}
 
