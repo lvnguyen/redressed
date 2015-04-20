@@ -14,7 +14,7 @@ import com.taptag.custom.CustomFragment;
 /**
  * Created by linhnguyen on 4/18/15.
  */
-public class CameraClass extends CustomFragment {
+public class OldCameraClass extends CustomFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

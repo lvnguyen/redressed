@@ -129,3 +129,9 @@ ADDED from AndroidManifest.xml:59:13
 		ADDED from AndroidManifest.xml:61:17
 	android:name
 		ADDED from AndroidManifest.xml:60:17
+activity#com.taptag.ui.NewClothesActivity
+ADDED from AndroidManifest.xml:64:9
+	android:label
+		ADDED from AndroidManifest.xml:66:13
+	android:name
+		ADDED from AndroidManifest.xml:65:13

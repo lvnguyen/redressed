@@ -62,18 +62,11 @@
                 android:orientation="vertical" >
 
                 <TextView
-                    android:id="@+id/textView1"
-                    style="@style/lbl_pattern1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="21K" />
-
-                <TextView
-                    android:id="@+id/textView1"
+                    android:id="@+id/new_clothes"
                     style="@style/lbl_pattern2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Followers" />
+                    android:text="Add New Clothes" />
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/p2"

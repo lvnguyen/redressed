@@ -60,6 +60,11 @@
                 android:name="com.parse.ui.ParseLoginActivity.PARSE_LOGIN_EMAIL_AS_USERNAME"
                 android:value="true"/>
         </activity>
+
+        <activity
+            android:name=".ui.NewClothesActivity"
+            android:label="@string/title_activity_new_clothes" >
+        </activity>
     </application>
 
 </manifest>

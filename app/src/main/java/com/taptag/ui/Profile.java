@@ -1,5 +1,6 @@
 package com.taptag.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,6 +38,15 @@ public class Profile extends CustomFragment
         TextView emailText = (TextView) v.findViewById(R.id.email_addr);
         emailText.setText(myEmailAddress);
 
+        TextView newPhotoButton = (TextView) v.findViewById(R.id.new_clothes);
+        newPhotoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(view.getContext(), NewClothesActivity.class);
+                startActivityForResult(i, 0); // TODO: what error code we set here?
+            }
+        });
+
 		setTouchNClick(v.findViewById(R.id.p1));
 		setTouchNClick(v.findViewById(R.id.p2));
 		setTouchNClick(v.findViewById(R.id.p3));
@@ -72,7 +82,7 @@ public class Profile extends CustomFragment
 		@Override
 		public int getCount()
 		{
-			return 30;
+			return 5;
 		}
 
 		/* (non-Javadoc)

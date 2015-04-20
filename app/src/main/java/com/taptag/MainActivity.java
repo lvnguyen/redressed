@@ -15,11 +15,12 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 import com.parse.Parse;
+import com.parse.ParseObject;
 import com.parse.ui.ParseLoginBuilder;
 import com.taptag.custom.CustomActivity;
 import com.taptag.model.Data;
-import com.taptag.ui.CameraClass;
 import com.taptag.ui.Categories;
+import com.taptag.ui.Clothes;
 import com.taptag.ui.LeftNavAdapter;
 import com.taptag.ui.Profile;
 import com.taptag.ui.Search;
@@ -53,6 +54,8 @@ public class MainActivity extends CustomActivity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+
+        ParseObject.registerSubclass(Clothes.class);
 
         // Enable Local Datastore.
         Parse.enableLocalDatastore(this);
@@ -134,7 +137,6 @@ public class MainActivity extends CustomActivity
 		al.add(new Data("Store", null, R.drawable.ic_nav3));
 		al.add(new Data("Profile", null, R.drawable.ic_nav4));
 		al.add(new Data("Search", null, R.drawable.ic_nav5));
-        al.add(new Data("Take picture", null, R.drawable.ic_nav6));
 		return al;
 	}
 
@@ -174,10 +176,6 @@ public class MainActivity extends CustomActivity
 			title = "Search";
 			f = new Search();
 		}
-        else if (pos == 5) {
-            title = "New picture";
-            f = new CameraClass();
-        }
 
 		if (f != null)
 		{
@@ -205,17 +203,6 @@ public class MainActivity extends CustomActivity
                 setActionBarTitle();
             }
         });
-        /*
-		getSupportFragmentManager().addOnBackStackChangedListener(
-				new OnBackStackChangedListener() {
-
-					@Override
-					public void onBackStackChanged()
-					{
-						setActionBarTitle();
-					}
-				});
-		*/
 		launchFragment(0);
 	}
 
