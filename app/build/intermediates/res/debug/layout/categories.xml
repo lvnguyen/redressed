@@ -11,4 +11,4 @@
     tools:context=".custom.CustomActivity"
     tools:listitem="@layout/cat_item" >
 
-</GridView><!-- From: file:/Users/linhnguyen/Desktop/open_sources/TapTag1/app/src/main/res/layout/categories.xml -->
+</GridView><!-- From: file:/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/categories.xml -->

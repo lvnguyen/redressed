@@ -14,6 +14,8 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
+import com.parse.Parse;
+import com.parse.ParseObject;
 import com.taptag.custom.CustomActivity;
 import com.taptag.model.Data;
 import com.taptag.ui.CameraClass;
@@ -52,7 +54,16 @@ public class MainActivity extends CustomActivity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		setupDrawer();
+        // Enable Local Datastore.
+        Parse.enableLocalDatastore(this);
+
+        Parse.initialize(this, "qEXwo0QIlOa4BnuCpGjRplb0lT880Qs4tovMAYTN", "d8Kl4XkpSjdn4y2Pdu7z9VxVfSdsPHXiQrLC9mie");
+
+        ParseObject testObject = new ParseObject("TestObject");
+        testObject.put("foo", "bar");
+        testObject.saveInBackground();
+
+        setupDrawer();
 		setupContainer();
 	}
 

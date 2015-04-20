@@ -6,7 +6,21 @@
         jumboMode="false"
         revision="22.0.0"
         sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
-        <dex dex="/Users/linhnguyen/Desktop/open_sources/TapTag1/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-da2966722264db9fc3677d25bbf81a193a85589a.jar" />
+        <dex dex="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-da2966722264db9fc3677d25bbf81a193a85589a.jar" />
+    </item>
+    <item
+        jar="/Users/linhnguyen/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/bolts-android-1.2.0-d54be43b90252d96b3fe936408317e1849f1684a.jar" />
+    </item>
+    <item
+        jar="/Users/linhnguyen/Desktop/open_sources/redressed/libs/Parse-1.9.1/Parse-1.9.1.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="1b065010f3c9d441ede9078aca8eabcd1c81e647">
+        <dex dex="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/Parse-1.9.1-6cb54ac85b8cff279c499e3d3d2f0b19c6f32ad1.jar" />
     </item>
 
 </items>

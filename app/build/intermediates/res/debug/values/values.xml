@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/linhnguyen/Desktop/open_sources/TapTag1/app/src/main/res/values/color.xml -->
+    <!-- From: file:/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="black">#000000</color>
     <color name="blue_sky">#33b5e5</color>
@@ -17,20 +17,20 @@
     <color name="transparent">#00000000</color>
     <color name="white">#ffffff</color>
     <color name="white_smoke">#F7F7F7</color>
-    <!-- From: file:/Users/linhnguyen/Desktop/open_sources/TapTag1/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="profile_col_w">145dp</dimen>
     <dimen name="profile_grid_w">300dp</dimen>
     <dimen name="store_img_height">185dp</dimen>
-    <!-- From: file:/Users/linhnguyen/Desktop/open_sources/TapTag1/app/src/main/res/values/color.xml -->
+    <!-- From: file:/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <drawable name="theme_black">#313031</drawable>
     <drawable name="theme_blue">#41b2ec</drawable>
     <drawable name="theme_green">#97e365</drawable>
     <drawable name="theme_red">#e74c3c</drawable>
-    <!-- From: file:/Users/linhnguyen/Desktop/open_sources/TapTag1/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">TapTag</string>
@@ -40,7 +40,7 @@
     <string name="menu1">Menu</string>
     <string name="settings">Settings</string>
     <string name="title_activity_camera">CameraActivity</string>
-    <!-- From: file:/Users/linhnguyen/Desktop/open_sources/TapTag1/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
     </style>

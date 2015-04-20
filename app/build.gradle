@@ -20,4 +20,7 @@ android {
 
 dependencies {
     compile 'com.android.support:support-v4:18.0.0'
+    compile 'com.parse.bolts:bolts-android:1.+'
+    compile fileTree(dir: 'libs/Parse-1.9.1', include: 'Parse-*.jar')
+    compile files('/Users/linhnguyen/Desktop/open_sources/redressed/libs/Parse-1.9.1/Parse-1.9.1.jar')
 }
