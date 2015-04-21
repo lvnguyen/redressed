@@ -9,10 +9,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-         >
+        android:id="@+id/search_box">
 
         <EditText
-            android:id="@+id/editText1"
+            android:id="@+id/search_name"
             style="@style/edittext_search"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -22,6 +22,34 @@
             android:layout_marginRight="10dp"
             android:hint="Find" >
         </EditText>
+
+        <EditText
+            android:id="@+id/search_size"
+            android:hint="Preferred size (optional)"
+            style="@style/edittext_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" ></EditText>
+
+        <EditText
+            android:id="@+id/search_brand"
+            android:hint="Preferred brand (optional)"
+            style="@style/edittext_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" ></EditText>
+        
+        <Button
+            android:id="@+id/start_search_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SEARCH"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -100,16 +128,21 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
             android:text="Category" />
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/main_color_cyan"
-            android:textSize="16sp"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="10dp"
-            android:text="Price" />
-        
+
+        <GridView
+            android:id="@+id/grid"
+            android:layout_width="@dimen/profile_grid_w"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:columnWidth="@dimen/profile_col_w"
+            android:gravity="center_horizontal"
+            android:horizontalSpacing="10dp"
+            android:numColumns="2"
+            android:stretchMode="none"
+            android:verticalSpacing="10dp"
+            tools:listitem="@layout/profile_item"
+            >
+        </GridView>
 
     </LinearLayout>
 

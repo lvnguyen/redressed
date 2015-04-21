@@ -41,7 +41,11 @@ public class NewClothesFragment extends Fragment {
     private ImageButton photoButton;
     private Button saveButton;
     private Button cancelButton;
+
     private TextView clothesName;
+    private TextView clothesSize;
+    private TextView clothesBrand;
+
     private ParseImageView clothesPreview;
 
     @Override
@@ -54,8 +58,10 @@ public class NewClothesFragment extends Fragment {
                              Bundle SavedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_new_clothes, parent, false);
 
-        clothesName = ((EditText) v.findViewById(R.id.clothes_name));
-
+        // TODO: validate input
+        clothesName = (EditText) v.findViewById(R.id.clothes_name);
+        clothesSize = (EditText) v.findViewById(R.id.clothes_size);
+        clothesBrand = (EditText) v.findViewById(R.id.clothes_brand);
 
         photoButton = ((ImageButton) v.findViewById(R.id.photo_button));
         photoButton.setOnClickListener(new View.OnClickListener() {
@@ -65,6 +71,8 @@ public class NewClothesFragment extends Fragment {
                 InputMethodManager imm = (InputMethodManager) getActivity()
                         .getSystemService(Context.INPUT_METHOD_SERVICE);
                 imm.hideSoftInputFromWindow(clothesName.getWindowToken(), 0);
+                imm.hideSoftInputFromWindow(clothesBrand.getWindowToken(), 0);
+                imm.hideSoftInputFromWindow(clothesSize.getWindowToken(), 0);
                 startCamera();
             }
         });
@@ -118,7 +126,7 @@ public class NewClothesFragment extends Fragment {
         });
 
         // Until the user has taken a photo, hide the preview
-        clothesPreview = (ParseImageView) v.findViewById(R.id.meal_preview_image);
+        clothesPreview = (ParseImageView) v.findViewById(R.id.clothes_preview_image);
         clothesPreview.setVisibility(View.INVISIBLE);
 
         return v;

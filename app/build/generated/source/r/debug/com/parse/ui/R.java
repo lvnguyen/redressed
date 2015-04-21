@@ -139,7 +139,7 @@ public final class R {
 		public static final int login_help_submit = 0x7f0a002e;
 		public static final int login_password_input = 0x7f0a0027;
 		public static final int login_username_input = 0x7f0a0026;
-		public static final int messenger_send_button = 0x7f0a004e;
+		public static final int messenger_send_button = 0x7f0a0050;
 		public static final int never_display = 0x7f0a000e;
 		public static final int normal = 0x7f0a0010;
 		public static final int open_graph = 0x7f0a0000;

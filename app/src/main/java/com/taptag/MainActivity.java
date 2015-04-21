@@ -16,6 +16,7 @@ import android.widget.ListView;
 
 import com.parse.Parse;
 import com.parse.ParseObject;
+import com.parse.ui.ParseLoginBuilder;
 import com.taptag.custom.CustomActivity;
 import com.taptag.model.Data;
 import com.taptag.ui.Categories;
@@ -45,6 +46,10 @@ public class MainActivity extends CustomActivity
 	/** The drawer toggle. */
 	private ActionBarDrawerToggle drawerToggle;
 
+    /** App ID from using Parse */
+    private static final String PARSE_APP_ID = "qEXwo0QIlOa4BnuCpGjRplb0lT880Qs4tovMAYTN";
+    private static final String PARSE_CLIENT_KEY = "d8Kl4XkpSjdn4y2Pdu7z9VxVfSdsPHXiQrLC9mie";
+
 	/* (non-Javadoc)
 	 * @see com.newsfeeder.custom.CustomActivity#onCreate(android.os.Bundle)
 	 */
@@ -58,11 +63,12 @@ public class MainActivity extends CustomActivity
 
         // Enable Local Datastore.
         Parse.enableLocalDatastore(this);
-        Parse.initialize(this, "qEXwo0QIlOa4BnuCpGjRplb0lT880Qs4tovMAYTN", "d8Kl4XkpSjdn4y2Pdu7z9VxVfSdsPHXiQrLC9mie");
+        Parse.initialize(this, PARSE_APP_ID, PARSE_CLIENT_KEY);
 
         // Trigger Parse login
-        // ParseLoginBuilder builder = new ParseLoginBuilder(MainActivity.this);
-        // startActivityForResult(builder.build(), 0);
+        ParseLoginBuilder builder = new ParseLoginBuilder(MainActivity.this);
+        startActivityForResult(builder.build(), 0);
+
         setupDrawer();
         setupContainer();
     }

@@ -23,6 +23,14 @@ public class Clothes extends ParseObject {
         put("title", title);
     }
 
+    public int getSize() { return getInt("size"); }
+
+    public void setSize(int size) { put("size", size); }
+
+    public String getBrand() { return getString("brand"); }
+
+    public void setBrand(String brand) { put("brand", brand); }
+
     public ParseUser getAuthor() {
         return getParseUser("username");
     }
