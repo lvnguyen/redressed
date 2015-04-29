@@ -60,6 +60,7 @@ public class NewClothesFragment extends Fragment {
 
         // TODO: validate input
         clothesName = (EditText) v.findViewById(R.id.clothes_name);
+        // What is size: small, medium, large, XL, L, ..
         clothesSize = (EditText) v.findViewById(R.id.clothes_size);
         clothesBrand = (EditText) v.findViewById(R.id.clothes_brand);
 
@@ -87,6 +88,8 @@ public class NewClothesFragment extends Fragment {
                 // When the user clicks "Save," upload the clothes to Parse
                 // Add data to the clothes object:
                 clothes.setTitle(clothesName.getText().toString());
+                clothes.setSize( clothesSize.getText().toString() );
+                clothes.setBrand( clothesBrand.getText().toString() );
 
                 // Associate the clothes with the current user
                 clothes.setAuthor(ParseUser.getCurrentUser());

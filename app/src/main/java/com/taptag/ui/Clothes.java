@@ -23,9 +23,9 @@ public class Clothes extends ParseObject {
         put("title", title);
     }
 
-    public int getSize() { return getInt("size"); }
+    public String getSize() { return getString("size"); }
 
-    public void setSize(int size) { put("size", size); }
+    public void setSize(String size) { put("size", size); }
 
     public String getBrand() { return getString("brand"); }
 

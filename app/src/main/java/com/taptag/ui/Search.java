@@ -41,7 +41,7 @@ public class Search extends CustomFragment
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState)
 	{
-		View v = inflater.inflate(R.layout.search, null);
+		final View v = inflater.inflate(R.layout.search, null);
         final Button searchButton = (Button) v.findViewById(R.id.start_search_button);
 
         allItems = new ArrayList<ParseObject>();
@@ -53,10 +53,10 @@ public class Search extends CustomFragment
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TextView searchNameView = (EditText) view.findViewById(R.id.search_name);
+                TextView searchNameView = (EditText) v.findViewById(R.id.search_name);
                 String searchName = (String) searchNameView.getText().toString();
                 if (searchName.isEmpty()) {
-                    Toast.makeText(view.getContext(), "You must enter your search",
+                    Toast.makeText(v.getContext(), "You must enter your search",
                             Toast.LENGTH_SHORT).show();
                     return;
                 }
@@ -64,14 +64,14 @@ public class Search extends CustomFragment
                 /**
                  * Construct the query with name, size and brand
                  */
-                TextView searchSizeView = (EditText) view.findViewById(R.id.search_size);
+                TextView searchSizeView = (EditText) v.findViewById(R.id.search_size);
                 String searchSize = (String) searchSizeView.getText().toString();
 
-                TextView searchBrandView = (EditText) view.findViewById(R.id.search_brand);
+                TextView searchBrandView = (EditText) v.findViewById(R.id.search_brand);
                 String searchBrand = (String) searchBrandView.getText().toString();
 
                 ParseQuery<ParseObject> query = ParseQuery.getQuery("Clothes");
-                query.whereEqualTo("name", searchName);
+                query.whereEqualTo("title", searchName);
                 if (!searchSize.isEmpty()) {
                     query.whereEqualTo("size", searchSize);
                 }
@@ -87,6 +87,9 @@ public class Search extends CustomFragment
                     public void done(List<ParseObject> parseObjects, ParseException e) {
                         for (ParseObject obj : parseObjects) {
                             allItems.add(obj);
+                        }
+                        if (allItems.isEmpty()) {
+                            Toast.makeText(getActivity(), "No result found.", Toast.LENGTH_SHORT).show();
                         }
                         gridAdapter.notifyDataSetChanged();
                     }
@@ -149,6 +152,11 @@ public class Search extends CustomFragment
         @Override
         public View getView(int pos, View v, ViewGroup arg2)
         {
+            // Only load the picture when pos is inside the range
+            if (pos < 0 || pos >= allItems.size()) {
+                return null;
+            }
+
             if (v == null)
                 v = LayoutInflater.from(getActivity()).inflate(
                         R.layout.profile_item, null);
