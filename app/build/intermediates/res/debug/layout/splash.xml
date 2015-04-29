@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" 
-    android:background="@drawable/splash">
-    
+    android:background="@drawable/redressed_logo">
 
 </LinearLayout>
 <!-- From: file:/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/splash.xml -->

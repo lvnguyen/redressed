@@ -14,9 +14,9 @@ import android.view.WindowManager;
 import com.taptag.R;
 
 /*
- * NewMealActivity contains two fragments that handle
- * data entry and capturing a photo of a given meal.
- * The Activity manages the overall meal data.
+ * NewClothesActivity contains two fragments that handle
+ * data entry and capturing a photo of a given clothes.
+ * The Activity manages the overall clothes data.
  */
 public class NewClothesActivity extends Activity {
 
@@ -30,7 +30,7 @@ public class NewClothesActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         // Begin with main data entry view,
-        // NewMealFragment
+        // NewClothesFragment
         setContentView(R.layout.activity_new_clothes);
         FragmentManager manager = getFragmentManager();
         Fragment fragment = manager.findFragmentById(R.id.fragmentContainer);

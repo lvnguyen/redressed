@@ -139,7 +139,7 @@ public final class R {
 		public static final int login_help_submit = 0x7f0a002e;
 		public static final int login_password_input = 0x7f0a0027;
 		public static final int login_username_input = 0x7f0a0026;
-		public static final int messenger_send_button = 0x7f0a0050;
+		public static final int messenger_send_button = 0x7f0a0052;
 		public static final int never_display = 0x7f0a000e;
 		public static final int normal = 0x7f0a0010;
 		public static final int open_graph = 0x7f0a0000;
@@ -173,12 +173,12 @@ public final class R {
 		public static final int com_parse_ui_parse_login_third_party_section = 0x7f03000e;
 		public static final int com_parse_ui_parse_signup_form = 0x7f03000f;
 		public static final int com_parse_ui_parse_signup_fragment = 0x7f030010;
-		public static final int messenger_button_send_blue_large = 0x7f030016;
-		public static final int messenger_button_send_blue_round = 0x7f030017;
-		public static final int messenger_button_send_blue_small = 0x7f030018;
-		public static final int messenger_button_send_white_large = 0x7f030019;
-		public static final int messenger_button_send_white_round = 0x7f03001a;
-		public static final int messenger_button_send_white_small = 0x7f03001b;
+		public static final int messenger_button_send_blue_large = 0x7f030017;
+		public static final int messenger_button_send_blue_round = 0x7f030018;
+		public static final int messenger_button_send_blue_small = 0x7f030019;
+		public static final int messenger_button_send_white_large = 0x7f03001a;
+		public static final int messenger_button_send_white_round = 0x7f03001b;
+		public static final int messenger_button_send_white_small = 0x7f03001c;
 	}
 	public static final class plurals {
 		public static final int com_parse_ui_password_too_short_toast = 0x7f060000;

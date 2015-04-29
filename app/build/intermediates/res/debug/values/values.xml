@@ -107,7 +107,7 @@
     <!-- From: file:/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
-    <string name="app_name">TapTag</string>
+    <string name="app_name">Redressed</string>
     <string name="cancel_button_text">Cancel</string>
     <string name="clothes_label">Add a Clothes</string>
     <!-- From: file:/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.1/res/values/values.xml -->

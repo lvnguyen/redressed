@@ -171,10 +171,10 @@ public class Profile extends CustomFragment
 						R.layout.profile_item, null);
 
             final ImageView img = (ImageView) v.findViewById(R.id.img);
-            ParseObject imgObject = allItems.get(pos);
+            final ParseObject imgObject = allItems.get(pos);
 
             // fetching photo, title, size and brand
-            ParseFile remoteFile = (ParseFile) imgObject.get("photo");
+            final ParseFile remoteFile = (ParseFile) imgObject.get("photo");
             remoteFile.getDataInBackground(new GetDataCallback() {
                 @Override
                 public void done(byte[] bytes, ParseException e) {
@@ -182,6 +182,21 @@ public class Profile extends CustomFragment
                         Bitmap bm = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
                         img.setImageBitmap(bm);
                     }
+                }
+            });
+
+            img.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(getActivity(), LargeClothesActivity.class);
+                    Bundle b = new Bundle();
+                    b.putString("file", remoteFile.getUrl());
+
+                    ParseUser user = (ParseUser) imgObject.get("username");
+                    b.putString("user", (String) user.get("name"));
+
+                    intent.putExtras(b);
+                    startActivity(intent);
                 }
             });
 
