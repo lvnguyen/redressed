@@ -172,6 +172,8 @@ public class Profile extends CustomFragment
 
             final ImageView img = (ImageView) v.findViewById(R.id.img);
             ParseObject imgObject = allItems.get(pos);
+
+            // fetching photo, title, size and brand
             ParseFile remoteFile = (ParseFile) imgObject.get("photo");
             remoteFile.getDataInBackground(new GetDataCallback() {
                 @Override
@@ -182,6 +184,18 @@ public class Profile extends CustomFragment
                     }
                 }
             });
+
+            String clothesTitle = (String) imgObject.get("title");
+            TextView clothesTitleView = (TextView) v.findViewById(R.id.lbl);
+            clothesTitleView.setText(clothesTitle);
+
+            String clothesBrand = (String) imgObject.get("brand");
+            TextView clothesBrandView = (TextView) v.findViewById(R.id.lbl1);
+            clothesBrandView.setText(clothesBrand);
+
+            String clothesSize = (String) imgObject.get("size");
+            TextView clothesSizeView = (TextView) v.findViewById(R.id.lbl2);
+            clothesSizeView.setText(clothesSize);
 
             return v;
 		}

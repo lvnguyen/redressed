@@ -53,6 +53,9 @@ public class Search extends CustomFragment
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // Clear all items before searching
+                allItems.clear();
+                
                 TextView searchNameView = (EditText) v.findViewById(R.id.search_name);
                 String searchName = (String) searchNameView.getText().toString();
                 if (searchName.isEmpty()) {
@@ -173,6 +176,18 @@ public class Search extends CustomFragment
                     }
                 }
             });
+
+            String clothesTitle = (String) imgObject.get("title");
+            TextView clothesTitleView = (TextView) v.findViewById(R.id.lbl);
+            clothesTitleView.setText(clothesTitle);
+
+            String clothesBrand = (String) imgObject.get("brand");
+            TextView clothesBrandView = (TextView) v.findViewById(R.id.lbl1);
+            clothesBrandView.setText(clothesBrand);
+
+            String clothesSize = (String) imgObject.get("size");
+            TextView clothesSizeView = (TextView) v.findViewById(R.id.lbl2);
+            clothesSizeView.setText(clothesSize);
 
             return v;
         }
