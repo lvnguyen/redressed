@@ -70,6 +70,8 @@ public class Profile extends CustomFragment
         GridView grid = (GridView) v.findViewById(R.id.grid);
         grid.setAdapter(gridAdapter);
 
+        final TextView photoCountText = (TextView) v.findViewById(R.id.photo_count);
+
         /**
          * asynchronous
          */
@@ -82,6 +84,12 @@ public class Profile extends CustomFragment
                 if (e == null) {
                     for (ParseObject object : parseObjects) {
                         allItems.add(object);
+                    }
+                    if (allItems.size() == 1) {
+                        photoCountText.setText("1 Photo");
+                    }
+                    else {
+                        photoCountText.setText(allItems.size() + " Photos");
                     }
                     gridAdapter.notifyDataSetChanged();
                 }
@@ -153,7 +161,12 @@ public class Profile extends CustomFragment
 		@Override
 		public View getView(int pos, View v, ViewGroup arg2)
 		{
-			if (v == null)
+            // Do not load view when pos is out of range
+			if (pos < 0 || pos >= allItems.size()) {
+                return null;
+            }
+
+            if (v == null)
 				v = LayoutInflater.from(getActivity()).inflate(
 						R.layout.profile_item, null);
 
