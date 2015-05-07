@@ -15,17 +15,19 @@
         android:id="@+id/clothes_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textMultiLine" />
+        android:hint="Enter clothes name" />
 
     <EditText
         android:id="@+id/clothes_size"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="Enter size" />
 
     <EditText
         android:id="@+id/clothes_brand"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="Enter brand" />
 
     <ImageButton
         android:id="@+id/photo_button"

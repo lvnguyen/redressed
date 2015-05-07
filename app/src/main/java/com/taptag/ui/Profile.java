@@ -61,9 +61,6 @@ public class Profile extends CustomFragment
         });
 
 		setTouchNClick(v.findViewById(R.id.p1));
-		setTouchNClick(v.findViewById(R.id.p2));
-		// setTouchNClick(v.findViewById(R.id.p3));
-
         allItems = new ArrayList<ParseObject>();
         final GridAdapter gridAdapter = new GridAdapter(allItems);
 
@@ -221,6 +218,5 @@ public class Profile extends CustomFragment
 
             return v;
 		}
-
 	}
 }
