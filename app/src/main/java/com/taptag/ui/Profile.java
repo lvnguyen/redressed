@@ -175,6 +175,13 @@ public class Profile extends CustomFragment
 
             // fetching photo, title, size and brand
             final ParseFile remoteFile = (ParseFile) imgObject.get("photo");
+
+            // Bug occurred when the corresponding item received from the server is null
+            // Temporary fix: if it is null, return
+            if (remoteFile == null) {
+                return null;
+            }
+
             remoteFile.getDataInBackground(new GetDataCallback() {
                 @Override
                 public void done(byte[] bytes, ParseException e) {

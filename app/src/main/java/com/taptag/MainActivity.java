@@ -19,13 +19,10 @@ import com.parse.ParseObject;
 import com.parse.ui.ParseLoginBuilder;
 import com.taptag.custom.CustomActivity;
 import com.taptag.model.Data;
-import com.taptag.ui.Categories;
 import com.taptag.ui.Clothes;
 import com.taptag.ui.LeftNavAdapter;
 import com.taptag.ui.Profile;
 import com.taptag.ui.Search;
-import com.taptag.ui.Showcase;
-import com.taptag.ui.Store;
 
 import java.util.ArrayList;
 
@@ -136,9 +133,6 @@ public class MainActivity extends CustomActivity
 	private ArrayList<Data> getDummyLeftNavItems()
 	{
 		ArrayList<Data> al = new ArrayList<Data>();
-		al.add(new Data("Showcase", null, R.drawable.ic_nav1));
-		al.add(new Data("Categories", null, R.drawable.ic_nav2));
-		al.add(new Data("Store", null, R.drawable.ic_nav3));
 		al.add(new Data("Profile", null, R.drawable.ic_nav4));
 		al.add(new Data("Search", null, R.drawable.ic_nav5));
 		return al;
@@ -157,25 +151,10 @@ public class MainActivity extends CustomActivity
 		String title = null;
 		if (pos == 0)
 		{
-			title = "Showcase";
-			f = new Showcase();
-		}
-		else if (pos == 1)
-		{
-			title = "Categories";
-			f = new Categories();
-		}
-		else if (pos == 2)
-		{
-			title = "Store";
-			f = new Store();
-		}
-		else if (pos == 3)
-		{
 			title = "Profile";
 			f = new Profile();
 		}
-		else if (pos == 4)
+		else if (pos == 1)
 		{
 			title = "Search";
 			f = new Search();

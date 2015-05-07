@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 24.0.2">
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/imageView1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                android:id=&quot;@+id/imageView1&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/main_container.xml"
+            line="30"
+            column="17"/>
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/main_container.xml"
+            line="23"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/imageView1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                android:id=&quot;@+id/imageView1&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/main_container.xml"
+            line="37"
+            column="17"/>
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/main_container.xml"
+            line="23"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/imageView1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                android:id=&quot;@+id/imageView1&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/main_container.xml"
+            line="44"
+            column="17"/>
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/main_container.xml"
+            line="23"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/imageView1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                android:id=&quot;@+id/imageView1&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/main_container.xml"
+            line="51"
+            column="17"/>
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/main_container.xml"
+            line="23"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/switch1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                android:id=&quot;@+id/switch1&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/main_container.xml"
+            line="71"
+            column="17"/>
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/main_container.xml"
+            line="65"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/textView1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/textView1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/main_container.xml"
+            line="139"
+            column="21"/>
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/main_container.xml"
+            line="132"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/textView1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/textView1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/main_container.xml"
+            line="155"
+            column="21"/>
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/main_container.xml"
+            line="132"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/textView1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/textView1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/main_container.xml"
+            line="162"
+            column="21"/>
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/main_container.xml"
+            line="132"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/textView1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/textView1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/main_container.xml"
+            line="179"
+            column="21"/>
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/main_container.xml"
+            line="132"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/textView2`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="        android:id=&quot;@+id/textView2&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout-large/profile.xml"
+            line="37"
+            column="9"/>
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout-large/profile.xml"
+            line="30"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/textView2`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="        android:id=&quot;@+id/textView2&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout-large/profile.xml"
+            line="44"
+            column="9"/>
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout-large/profile.xml"
+            line="30"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/textView1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/textView1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout-large/profile.xml"
+            line="76"
+            column="21"/>
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout-large/profile.xml"
+            line="69"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/textView1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/textView1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/profile.xml"
+            line="88"
+            column="21"/>
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/profile.xml"
+            line="81"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/textView1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/textView1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout-large/profile.xml"
+            line="92"
+            column="21"/>
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout-large/profile.xml"
+            line="69"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/textView1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/textView1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout-large/profile.xml"
+            line="99"
+            column="21"/>
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout-large/profile.xml"
+            line="69"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/textView1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/textView1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/profile.xml"
+            line="105"
+            column="21"/>
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/profile.xml"
+            line="81"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/textView1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/textView1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout-large/profile.xml"
+            line="116"
+            column="21"/>
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout-large/profile.xml"
+            line="69"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/textView2`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="        android:id=&quot;@+id/textView2&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout-large/profile.xml"
+            line="127"
+            column="9"/>
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout-large/profile.xml"
+            line="30"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/textView1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/textView1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/search.xml"
+            line="86"
+            column="21"/>
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/search.xml"
+            line="69"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/textView1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/textView1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/search.xml"
+            line="104"
+            column="21"/>
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/search.xml"
+            line="69"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/textView2`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="            android:id=&quot;@+id/textView2&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/search.xml"
+            line="123"
+            column="13"/>
+        <location
+            file="/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/search.xml"
+            line="114"
+            column="13"/>
+    </issue>
+
+</issues>
