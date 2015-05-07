@@ -24,5 +24,4 @@
         android:dividerHeight="1dp"
         />
    
-</android.support.v4.widget.DrawerLayout>
-<!-- From: file:/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/activity_main.xml -->
+</android.support.v4.widget.DrawerLayout><!-- From: file:/Users/linhnguyen/Desktop/open_sources/redressed/app/src/main/res/layout/activity_main.xml -->

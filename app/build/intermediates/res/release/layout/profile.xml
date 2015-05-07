@@ -16,7 +16,7 @@
         android:gravity="center_vertical">
 
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/profile_img1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/icon" />
@@ -67,48 +67,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Add New Clothes" />
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/p2"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/color_pattern2"
-                android:gravity="center"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:id="@+id/textView1"
-                    style="@style/lbl_pattern1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="34" />
-
-                <TextView
-                    android:id="@+id/textView1"
-                    style="@style/lbl_pattern2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Following" />
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/p3"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/color_pattern3"
-                android:gravity="center"
-                android:orientation="vertical" >
-
-
-                <TextView
-                    android:id="@+id/textView1"
-                    style="@style/lbl_pattern2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableTop="@drawable/ic_gear"
-                    android:drawablePadding="3dp"
-                    android:text="Settings" />
             </LinearLayout>
         </LinearLayout>
 

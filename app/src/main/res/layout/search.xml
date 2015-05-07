@@ -66,7 +66,7 @@
                 android:orientation="vertical" >
 
                 <TextView
-                    android:id="@+id/textView1"
+                    android:id="@+id/search_text1"
                     style="@style/lbl_pattern2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -83,7 +83,7 @@
                 android:orientation="vertical" >
 
                 <TextView
-                    android:id="@+id/textView1"
+                    android:id="@+id/search_text2"
                     style="@style/lbl_pattern2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -111,7 +111,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/search_text3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/main_color_cyan_dark"

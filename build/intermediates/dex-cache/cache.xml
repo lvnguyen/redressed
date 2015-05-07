@@ -16,18 +16,18 @@
         <dex dex="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/classes-f1a85dbf62064ce806600307972f9df2939ea9c8.jar" />
     </item>
     <item
-        jar="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/exploded-aar/redressed/ParseLoginUI/unspecified/libs/Parse-1.9.1.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="1b065010f3c9d441ede9078aca8eabcd1c81e647">
-        <dex dex="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/Parse-1.9.1-453eed47d61c00843858748fbac3f98f33e87571.jar" />
-    </item>
-    <item
         jar="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.1/classes.jar"
         jumboMode="false"
         revision="22.0.0"
         sha1="f7188fc9a524a8f965b5aeab74879036f0431080">
         <dex dex="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/classes-813c7b3d7db966185d83d9aa24a97d497bb61c44.jar" />
+    </item>
+    <item
+        jar="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/exploded-aar/redressed/ParseLoginUI/unspecified/libs/Parse-1.9.1.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="1b065010f3c9d441ede9078aca8eabcd1c81e647">
+        <dex dex="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/pre-dexed/debug/Parse-1.9.1-453eed47d61c00843858748fbac3f98f33e87571.jar" />
     </item>
     <item
         jar="/Users/linhnguyen/Desktop/open_sources/redressed/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"

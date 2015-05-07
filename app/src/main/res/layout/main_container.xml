@@ -20,35 +20,35 @@
             android:padding="15dp" >
 
             <ImageView
-                android:id="@+id/imageView1"
+                android:id="@+id/main_img1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:src="@drawable/dot_unselected" />
 
             <ImageView
-                android:id="@+id/imageView1"
+                android:id="@+id/main_img2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:src="@drawable/dot_unselected" />
 
             <ImageView
-                android:id="@+id/imageView1"
+                android:id="@+id/main_img3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:src="@drawable/dot_unselected" />
 
             <ImageView
-                android:id="@+id/imageView1"
+                android:id="@+id/main_img4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:src="@drawable/dot_selected" />
 
             <ImageView
-                android:id="@+id/imageView1"
+                android:id="@+id/main_img5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/dot_unselected" />
@@ -62,13 +62,13 @@
             android:gravity="center_vertical" >
 
             <Switch
-                android:id="@+id/switch1"
+                android:id="@+id/main_switch1"
                 style="@style/custom_switch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <Switch
-                android:id="@+id/switch1"
+                android:id="@+id/main_switch2"
                 style="@style/custom_switch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -129,14 +129,14 @@
                 android:orientation="vertical" >
 
                 <TextView
-                    android:id="@+id/textView1"
+                    android:id="@+id/main_text1"
                     style="@style/lbl_pattern1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="02" />
 
                 <TextView
-                    android:id="@+id/textView1"
+                    android:id="@+id/main_text2"
                     style="@style/lbl_pattern2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -152,14 +152,14 @@
                 android:orientation="vertical" >
 
                 <TextView
-                    android:id="@+id/textView1"
+                    android:id="@+id/main_text3"
                     style="@style/lbl_pattern1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="34" />
 
                 <TextView
-                    android:id="@+id/textView1"
+                    android:id="@+id/main_text4"
                     style="@style/lbl_pattern2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
