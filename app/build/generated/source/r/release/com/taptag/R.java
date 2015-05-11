@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.taptag;
+package com.redressed;
 
 public final class R {
     public static final class attr {
@@ -627,7 +627,7 @@ containing a value of this type.
             0x7f010004, 0x7f010005
         };
         /**
-          <p>This symbol is the offset where the {@link com.taptag.R.attr#auxiliary_view_position}
+          <p>This symbol is the offset where the {@link com.redressed.R.attr#auxiliary_view_position}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -645,7 +645,7 @@ containing a value of this type.
         */
         public static final int com_facebook_like_view_auxiliary_view_position = 4;
         /**
-          <p>This symbol is the offset where the {@link com.taptag.R.attr#foreground_color}
+          <p>This symbol is the offset where the {@link com.redressed.R.attr#foreground_color}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -660,7 +660,7 @@ containing a value of this type.
         */
         public static final int com_facebook_like_view_foreground_color = 0;
         /**
-          <p>This symbol is the offset where the {@link com.taptag.R.attr#horizontal_alignment}
+          <p>This symbol is the offset where the {@link com.redressed.R.attr#horizontal_alignment}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -678,7 +678,7 @@ containing a value of this type.
         */
         public static final int com_facebook_like_view_horizontal_alignment = 5;
         /**
-          <p>This symbol is the offset where the {@link com.taptag.R.attr#object_id}
+          <p>This symbol is the offset where the {@link com.redressed.R.attr#object_id}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -692,7 +692,7 @@ containing a value of this type.
         */
         public static final int com_facebook_like_view_object_id = 1;
         /**
-          <p>This symbol is the offset where the {@link com.taptag.R.attr#object_type}
+          <p>This symbol is the offset where the {@link com.redressed.R.attr#object_type}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -710,7 +710,7 @@ containing a value of this type.
         */
         public static final int com_facebook_like_view_object_type = 2;
         /**
-          <p>This symbol is the offset where the {@link com.taptag.R.attr#style}
+          <p>This symbol is the offset where the {@link com.redressed.R.attr#style}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -747,7 +747,7 @@ containing a value of this type.
             0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009
         };
         /**
-          <p>This symbol is the offset where the {@link com.taptag.R.attr#confirm_logout}
+          <p>This symbol is the offset where the {@link com.redressed.R.attr#confirm_logout}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -761,7 +761,7 @@ containing a value of this type.
         */
         public static final int com_facebook_login_view_confirm_logout = 0;
         /**
-          <p>This symbol is the offset where the {@link com.taptag.R.attr#login_text}
+          <p>This symbol is the offset where the {@link com.redressed.R.attr#login_text}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -775,7 +775,7 @@ containing a value of this type.
         */
         public static final int com_facebook_login_view_login_text = 1;
         /**
-          <p>This symbol is the offset where the {@link com.taptag.R.attr#logout_text}
+          <p>This symbol is the offset where the {@link com.redressed.R.attr#logout_text}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -789,7 +789,7 @@ containing a value of this type.
         */
         public static final int com_facebook_login_view_logout_text = 2;
         /**
-          <p>This symbol is the offset where the {@link com.taptag.R.attr#tooltip_mode}
+          <p>This symbol is the offset where the {@link com.redressed.R.attr#tooltip_mode}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -822,7 +822,7 @@ containing a value of this type.
             0x7f01000a, 0x7f01000b
         };
         /**
-          <p>This symbol is the offset where the {@link com.taptag.R.attr#is_cropped}
+          <p>This symbol is the offset where the {@link com.redressed.R.attr#is_cropped}
           attribute's value can be found in the {@link #com_facebook_profile_picture_view} array.
 
 
@@ -836,7 +836,7 @@ containing a value of this type.
         */
         public static final int com_facebook_profile_picture_view_is_cropped = 1;
         /**
-          <p>This symbol is the offset where the {@link com.taptag.R.attr#preset_size}
+          <p>This symbol is the offset where the {@link com.redressed.R.attr#preset_size}
           attribute's value can be found in the {@link #com_facebook_profile_picture_view} array.
 
 

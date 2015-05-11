@@ -1,7 +1,7 @@
 /**
  * Automatically generated file. DO NOT MODIFY
  */
-package com.taptag;
+package com.redressed;
 
 public final class BuildConfig {
   public static final boolean DEBUG = false;
