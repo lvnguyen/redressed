@@ -43,6 +43,10 @@ public class Profile extends CustomFragment
 	{
 		View v = inflater.inflate(R.layout.profile, null);
         ParseUser myUser = ParseUser.getCurrentUser();
+        if (myUser == null) {
+            return null;
+        }
+
         String myUsername = (String) myUser.get("name");
         TextView userNameText = (TextView) v.findViewById(R.id.user_name);
         userNameText.setText(myUsername);

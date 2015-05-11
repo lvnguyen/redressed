@@ -27,21 +27,21 @@
             android:orientation="vertical"
             android:layout_marginLeft="10dp" >
             <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/profile_text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/main_color_cyan_dark"
         android:textSize="22sp"
         android:text="Mel Gibson" />
             <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/profile_text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/gray_dk"
         android:textSize="14sp"
         android:text="Actor Director" />
             <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/profile_text3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/gray_dk"
@@ -66,14 +66,14 @@
                 android:orientation="vertical" >
 
                 <TextView
-                    android:id="@+id/textView1"
+                    android:id="@+id/profile_text4"
                     style="@style/lbl_pattern1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="21K" />
 
                 <TextView
-                    android:id="@+id/textView1"
+                    android:id="@+id/profile_text5"
                     style="@style/lbl_pattern2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -89,14 +89,14 @@
                 android:orientation="vertical" >
 
                 <TextView
-                    android:id="@+id/textView1"
+                    android:id="@+id/profile_text6"
                     style="@style/lbl_pattern1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="34" />
 
                 <TextView
-                    android:id="@+id/textView1"
+                    android:id="@+id/profile_text7"
                     style="@style/lbl_pattern2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
