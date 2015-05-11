@@ -73,7 +73,7 @@ MERGED from com.android.support:support-v4:22.0.0:22:5
 		ADDED from AndroidManifest.xml:26:9
 	android:theme
 		ADDED from AndroidManifest.xml:28:9
-activity#com.taptag.SplashScreen
+activity#com.redressed.SplashScreen
 ADDED from AndroidManifest.xml:29:9
 	android:screenOrientation
 		ADDED from AndroidManifest.xml:32:13
@@ -95,7 +95,7 @@ category#android.intent.category.LAUNCHER
 ADDED from AndroidManifest.xml:38:17
 	android:name
 		ADDED from AndroidManifest.xml:38:27
-activity#com.taptag.MainActivity
+activity#com.redressed.MainActivity
 ADDED from AndroidManifest.xml:41:9
 	android:screenOrientation
 		ADDED from AndroidManifest.xml:44:13
@@ -103,7 +103,7 @@ ADDED from AndroidManifest.xml:41:9
 		ADDED from AndroidManifest.xml:43:13
 	android:name
 		ADDED from AndroidManifest.xml:42:13
-activity#com.taptag.ui.CameraActivity
+activity#com.redressed.ui.CameraActivity
 ADDED from AndroidManifest.xml:46:9
 	android:label
 		ADDED from AndroidManifest.xml:48:13
@@ -129,13 +129,13 @@ ADDED from AndroidManifest.xml:59:13
 		ADDED from AndroidManifest.xml:61:17
 	android:name
 		ADDED from AndroidManifest.xml:60:17
-activity#com.taptag.ui.NewClothesActivity
+activity#com.redressed.ui.NewClothesActivity
 ADDED from AndroidManifest.xml:64:9
 	android:label
 		ADDED from AndroidManifest.xml:66:13
 	android:name
 		ADDED from AndroidManifest.xml:65:13
-activity#com.taptag.ui.LargeClothesActivity
+activity#com.redressed.ui.LargeClothesActivity
 ADDED from AndroidManifest.xml:69:9
 	android:label
 		ADDED from AndroidManifest.xml:71:13
