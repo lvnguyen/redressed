@@ -333,8 +333,8 @@ containing a value of this type.
         public static final int com_facebook_tooltip_bubble_view_text_body=0x7f0a0022;
         public static final int com_facebook_tooltip_bubble_view_top_pointer=0x7f0a0020;
         public static final int content_frame=0x7f0a0014;
-        public static final int cover_photo=0x7f0a0041;
-        public static final int cover_user=0x7f0a0042;
+        public static final int cover_photo=0x7f0a0042;
+        public static final int cover_user=0x7f0a0041;
         public static final int create_account=0x7f0a0036;
         public static final int display_always=0x7f0a000d;
         public static final int dot1=0x7f0a0078;

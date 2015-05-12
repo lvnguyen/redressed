@@ -192,7 +192,12 @@ public class Search extends CustomFragment
                     b.putString("file", remoteFile.getUrl());
 
                     ParseUser user = (ParseUser) imgObject.get("username");
-                    b.putString("user", (String) user.get("name"));
+                    try {
+                        b.putString("user", (String) user.fetchIfNeeded().get("name"));
+                    }
+                    catch (ParseException e) {
+                        e.printStackTrace();
+                    }
 
                     intent.putExtras(b);
                     startActivity(intent);
