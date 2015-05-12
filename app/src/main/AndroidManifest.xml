@@ -45,7 +45,7 @@
         </activity>
         <activity
             android:name="com.redressed.ui.CameraActivity"
-            android:label="@string/title_activity_camera" >
+            android:label="Take new picture" >
         </activity>
 
         <activity
@@ -63,12 +63,12 @@
 
         <activity
             android:name="com.redressed.ui.NewClothesActivity"
-            android:label="@string/title_activity_new_clothes" >
+            android:label="New Clothes" >
         </activity>
 
         <activity
             android:name="com.redressed.ui.LargeClothesActivity"
-            android:label="LargeClothesActivity" >
+            android:label="Details" >
         </activity>
     </application>
 

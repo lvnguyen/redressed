@@ -164,7 +164,7 @@ public class Profile extends CustomFragment
 		{
             // Do not load view when pos is out of range
 			if (pos < 0 || pos >= allItems.size()) {
-                return null;
+                return v;
             }
 
             if (v == null)
@@ -180,7 +180,7 @@ public class Profile extends CustomFragment
             // Bug occurred when the corresponding item received from the server is null
             // Temporary fix: if it is null, return
             if (remoteFile == null) {
-                return null;
+                return v;
             }
 
             remoteFile.getDataInBackground(new GetDataCallback() {

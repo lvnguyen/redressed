@@ -159,7 +159,7 @@ public class Search extends CustomFragment
         {
             // Only load the picture when pos is inside the range
             if (pos < 0 || pos >= allItems.size()) {
-                return null;
+                return v;
             }
 
             if (v == null)
@@ -169,6 +169,11 @@ public class Search extends CustomFragment
             final ImageView img = (ImageView) v.findViewById(R.id.img);
             final ParseObject imgObject = allItems.get(pos);
             final ParseFile remoteFile = (ParseFile) imgObject.get("photo");
+
+            if (remoteFile == null) {
+                return v;
+            }
+
             remoteFile.getDataInBackground(new GetDataCallback() {
                 @Override
                 public void done(byte[] bytes, ParseException e) {
